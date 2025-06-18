@@ -1,6 +1,8 @@
 
 import './App.css'
 import { Header } from './components/Header/Header';
+import { SideBar } from './components/SideBar/SideBar';
+import { Footer } from './components/Footer/Footer';
 import { Section } from './components/Section/Section';
 
 
@@ -15,10 +17,11 @@ function App() {
 
     </Header>
 
+    <SideBar/>
+
     <Section/>
 
-
-
+    <Footer/>
 
     </>
   )

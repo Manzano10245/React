@@ -1,4 +1,7 @@
 
+
+import {useState} from 'react'
+import {UserCard} from '../UserCard/UserCard'
 import './Section.css';
 
 import fresaImg from'../../assets/fresa.png'
@@ -27,28 +30,30 @@ const fruits =[
 
 ];
 export const Section = () => {
-    const handleClick=(name)=>{
-        alert(`Esta conectado a ${name}`)
-    }
+
+    const [ count, setCount] = useState(0)
+
+    console.log(count)
+
+    // const handleClick=()=>{
+    //     setCount(count + 1);
+    // }
+
+
+    // const handleClick=(name)=>{
+    //     alert(`Esta conectado a ${name}`)
+    // }
 
 return (
 
     <section>
         {
-            fruits.map(({id,name,description,image})=>{
+            fruits.map((fruit)=>{
                 return(
-                    <div className='card' key={id}>
-                        <img className='image' src={image} alt={name} />
-                        <h2 className='name'>{name}</h2>
-                        <p className='description'>{description}</p>
-                        <button id={id} onClick={()=> handleClick(name)}>contactarle</button>
-                    </div>
+                    <UserCard key={fruit.id} fruit={fruit}/>
                 )
             })
-            
-
-                    
-            
+        
     } 
 
     </section>
