@@ -1,0 +1,72 @@
+section {
+  padding: 2rem;
+  background: linear-gradient(135deg, #f6d0f9, #ffe3fc);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: right;
+}
+
+/* Tarjeta */
+.card {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 320px;
+  min-height: 420px;
+  background-color: #d0f1ff;
+  border-radius: 16px;
+  box-shadow: 4px 12px 20px rgba(119, 1, 93, 0.15);
+  text-align: center;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen */
+.image {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+}
+
+/* Texto */
+.name {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.description {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Botón */
+.card button {
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #16a085;
+}
+
+/* Mensaje de contacto (opcional si usas .contact-message) */
+.contact-message {
+  margin-top: 1rem;
+  color: #2d3436;
+  font-style: italic;
+}

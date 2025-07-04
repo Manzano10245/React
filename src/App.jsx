@@ -4,6 +4,7 @@ import { Header } from './components/Header/Header';
 import { SideBar } from './components/SideBar/SideBar';
 import { Footer } from './components/Footer/Footer';
 import { Section } from './components/Section/Section';
+import { Section2 } from './components/Section2/Section2';
 
 
 
@@ -19,7 +20,11 @@ function App() {
 
     <SideBar/>
 
+<h1>Sedes y Gerentes</h1>
     <Section/>
+    
+    <h1>Productos</h1>
+    <Section2/>
 
     <Footer/>
 

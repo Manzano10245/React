@@ -1,0 +1,9 @@
+1.  El manejo de imagenes en React con Assets consiste en agregar cada imagen necesaria en esta carpeta  
+    y dependiendo a que componente se quiera poner se importa al principio de esta manera:
+    import Img from'../../assets/imagen.png', despues de eso se llama de la manera que se le puso a la importacion 
+
+2.  Existen dos maneras de exportacion una que es de manera automatica de react o la otra nominal:
+
+    export const Section = () => {}
+
+    Que se exporta antes de la constante 
